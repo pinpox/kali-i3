@@ -1,0 +1,35 @@
+- src: https://github.com/binaryplease/ansible-i3.git
+  name: ansible-i3
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-neomutt.git
+  name: ansible-neomutt
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-polybar.git
+  name: ansible-polybar
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-rofi.git
+  name: ansible-rofi
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-termite.git
+  name: ansible-termite
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-tmux.git
+  name: ansible-tmux
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-vim.git
+  name: ansible-vim
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-xresources.git
+  name: ansible-xresources
+  scm: git
+
+- src: https://github.com/binaryplease/ansible-zsh.git
+  name: ansible-zsh
+  scm: git
