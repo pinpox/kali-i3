@@ -98,8 +98,9 @@ plugins with this command:
 
 ## Documentation
 
-I will be writing a accompanying post on my [personal blog](https://pablo.tools)
-anytime soon with more information about this project.
+There is also an accompanying post on my 
+[personal blog](https://pablo.tools/posts/computers/custom-kali-box/)
+with more information about this project and how it was created.
 Some of the added comments in the code might also be helpful.
 
 ## Contributing
