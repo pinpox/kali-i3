@@ -47,6 +47,23 @@ After vagrant has finished type in type in the default Kali credentials
 (`root`/`toor`) and select `i3 session` in the top right menu of the login
 manager.
 
+#### Custom settings
+
+There are a few settings that you might want to chang. These are defined at the
+top of the `playbook.yml`
+
+|Variable| Default | Description|
+|---|---|---|
+| i3_use_gaps| false | Use i3-gaps instead of i3|
+| i3_terminal| xfce4-terminal | Terminal emulator lauched with `mod`+`enter`|
+| i3_use_polybar| false| use polybar instead of i3bar|
+| i3_keyboard_layout| 'us -variant colemak -option "caps:escape"'| keyboard layout|
+| i3_optional| false| disable optional i3 settings|
+
+In particular, I use the [colemak](https://colemak.com/) keyboard layout. If you
+prefer something else, just put it in `i3_keyboard_layout` (e.g. `us`, without
+the variant)
+
 ## Troubleshooting
 
 Please report any issues not documented here.
