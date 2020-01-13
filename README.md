@@ -26,9 +26,7 @@ straigt-forward (actually only one single command, if everything goes well)
 
 You will need to have [vagrant](https://www.vagrantup.com) installed on your
 system. Ansible is **not** required, it will be automatically installed inside
-the VM.
-
-With vagrant installed, just clone this repository.
+the VM. With vagrant installed, just clone this repository.
 
 ### Run
 
@@ -49,12 +47,11 @@ After vagrant has finished type in type in the default Kali credentials
 (`root`/`toor`) and select `i3 session` in the top right menu of the login
 manager.
 
->[!WARNING]
->There is a strange behaviour of the login manager, causing it to launch the
-> default XFCE session instead of i3 sometimes, even if it was selected. To fix
-> this select the session **after** entering username and password, then click
-> login. Once again: 1. Type user/pass, 2. select "i3 session", 3. press login.
-> (Order matters!)
+> :warning: **!WARNING:** There is a strange behaviour of the login manager,
+> causing it to launch the default XFCE session instead of i3 sometimes, even if
+> it was selected. To fix this select the session **after** entering username
+> and password, then click login. Once again: 1. Type user/pass, 2. select "i3
+> session", 3. press login.  (Order matters!)
 
 ### Troubleshooting
 
