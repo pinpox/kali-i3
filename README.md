@@ -47,12 +47,6 @@ After vagrant has finished type in type in the default Kali credentials
 (`root`/`toor`) and select `i3 session` in the top right menu of the login
 manager.
 
-> :warning: **!WARNING:** There is a strange behaviour of the login manager,
-> causing it to launch the default XFCE session instead of i3 sometimes, even if
-> it was selected. To fix this select the session **after** entering username
-> and password, then click login. Once again: 1. Type user/pass, 2. select "i3
-> session", 3. press login.  (Order matters!)
-
 ### Troubleshooting
 
 Please report any issues not documented here.
@@ -61,6 +55,19 @@ Please report any issues not documented here.
 
 You might need to reboot the machine after the first provisioning has finished
 to use all the settings made automatically.
+
+#### i3 session not starting, even if selected
+
+There is a strange behaviour of the login manager, causing it to launch the
+default XFCE session instead of i3 sometimes, even if it was selected. To fix
+this select the session **after** entering username and password, then click
+login.
+
+Once again:
+
+1. Type user/pass
+2. select "i3 session"
+3. press login. (Order matters!)
 
 #### Shell shows errors
 
