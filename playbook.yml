@@ -15,9 +15,14 @@
         - zsh
         - neovim
         - apt-file
+        - rofi
         - nodejs
       state: latest
       update_cache: yes
+  - name: Install fonts and update font cache
+    script: install_fonts.sh
+    args:
+      creates: /usr/share/fonts/truetype/robotomono
   - name: Set shell of user root to zsh
     user:
       name: root
