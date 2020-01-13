@@ -14,8 +14,8 @@
   name: ansible-rofi
   scm: git
 
-- src: https://github.com/binaryplease/ansible-termite.git
-  name: ansible-termite
+- src: https://github.com/binaryplease/ansible-xfce4-terminal.git
+  name: ansible-xfce4-terminal
   scm: git
 
 - src: https://github.com/binaryplease/ansible-tmux.git
