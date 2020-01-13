@@ -22,13 +22,13 @@ tailored to my taste. You might experience non-default behaviour and settings.
 While knowledge about Ansible and Vagrant might be helpful, the setup is pretty
 straigt-forward (actually only one single command, if everything goes well)
 
-### Prerequisites
+#### Prerequisites
 
 You will need to have [vagrant](https://www.vagrantup.com) installed on your
 system. Ansible is **not** required, it will be automatically installed inside
 the VM. With vagrant installed, just clone this repository.
 
-### Run
+#### Run
 
 To generate and start the VM run just run vagrant inside the cloned repository
 containing the `Vagrantfile`:
@@ -41,13 +41,13 @@ Vagrant will download all necessary files, create a new Virtual Machine and
 configure everything as defined in the Ansible `playbook.yml`, this might take a
 while on the first start.
 
-### Login
+#### Login
 
 After vagrant has finished type in type in the default Kali credentials
 (`root`/`toor`) and select `i3 session` in the top right menu of the login
 manager.
 
-### Troubleshooting
+## Troubleshooting
 
 Please report any issues not documented here.
 
@@ -83,7 +83,6 @@ plugins with this command:
 
 I will be writing a accompanying post on my [personal blog](https://pablo.tools)
 anytime soon with more information about this project.
-
 Some of the added comments in the code might also be helpful.
 
 ## Contributing
