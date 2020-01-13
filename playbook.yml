@@ -4,6 +4,7 @@
     - i3_use_gaps: false
     - i3_terminal: xfce4-terminal
     - i3_use_polybar: false
+    - i3_optional: false
   remote_user: root
   tasks:
   - name: Install missing packages
