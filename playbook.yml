@@ -1,5 +1,9 @@
 ---
 - hosts: all
+  vars:
+    - i3_use_gaps: false
+    - i3_terminal: xfce4-terminal
+    - i3_use_polybar: false
   remote_user: root
   tasks:
   - name: Install missing packages
@@ -7,41 +11,22 @@
       pkg:
         - i3-wm
         - i3lock
+        - i3status
         - zsh
         - neovim
         - apt-file
-        - cmake # polybar
-        - cmake-data # polybar
-        - libcairo2-dev # polybar
-        - libxcb1-dev # polybar
-        - libxcb-ewmh-dev # polybar
-        - libxcb-icccm4-dev # polybar
-        - libxcb-image0-dev # polybar
-        - libxcb-randr0-dev # polybar
-        - libxcb-util0-dev # polybar
-        - libxcb-xkb-dev # polybar
-        - pkg-config # polybar
-        - python-xcbgen # polybar
-        - xcb-proto # polybar
-        - libxcb-xrm-dev # polybar
-        - libasound2-dev # polybar
-        - libmpdclient-dev # polybar
-        - libiw-dev # polybar
-        - libcurl4-openssl-dev # polybar
-        - libpulse-dev # polybar
-        - libxcb-composite0-dev # polybar
+        - nodejs
       state: latest
       update_cache: yes
-  - name: install polybar
-    script: "install_polybar.sh"
-    args:
-      creates: /usr/local/bin/polybar
-  # roles:
-  #    - ansible-xresources
-  #    - ansible-vim
-  #    - ansible-i3
-  #    - ansible-termite
-  #    - ansible-neomutt
-  #    - ansible-tmux
-  #    - ansible-polybar
-  #    - ansible-zsh
+  - name: Set shell of user root to zsh
+    user:
+      name: root
+      shell: /bin/zsh
+  roles:
+     - ansible-xresources
+     - ansible-i3
+     - ansible-vim
+     - ansible-xfce4-terminal
+     - ansible-tmux
+     - ansible-zsh
+     - ansible-rofi
