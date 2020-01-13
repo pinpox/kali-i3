@@ -16,6 +16,7 @@
         - zsh
         - neovim
         - apt-file
+        - htop
         - rofi
         - nodejs
         - nitrogen
