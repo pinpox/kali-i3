@@ -80,4 +80,6 @@ Vagrant.configure("2") do |config|
     # ansible.extra_vars = { }
     # ansible.inventory_path = "inventory"
   end
+
+vagrant_synced_folder_default_type = ""
 end
