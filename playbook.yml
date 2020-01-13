@@ -17,6 +17,7 @@
         - apt-file
         - rofi
         - nodejs
+        - nitrogen
       state: latest
       update_cache: yes
   - name: Install fonts and update font cache
@@ -27,6 +28,14 @@
     user:
       name: root
       shell: /bin/zsh
+  - name: Copy wallpaper
+    copy:
+      src: wallpaper.png
+      dest: /usr/share/backgrounds/kali/kali-i3.png
+  - name: Set wallpaper
+    copy:
+      src: nitrogen.cfg
+      dest: "{{ansible_env.HOME}}/.config/nitrogen/bg-saved.cfg"
   roles:
      - ansible-xresources
      - ansible-i3
