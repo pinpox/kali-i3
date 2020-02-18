@@ -5,9 +5,13 @@
     - i3_terminal: xfce4-terminal
     - i3_use_polybar: false
     - i3_optional: false
-  remote_user: root
+  remote_user: kali
+  become_user: kali
+  become: true
   tasks:
   - name: Install missing packages
+    become: yes
+    become_user: root
     apt:
       pkg:
         - i3-wm
@@ -26,9 +30,9 @@
     script: install_fonts.sh
     args:
       creates: /usr/share/fonts/truetype/robotomono
-  - name: Set shell of user root to zsh
+  - name: Set shell of user kali to zsh
     user:
-      name: root
+      name: kali
       shell: /bin/zsh
   - name: Copy wallpaper
     copy:

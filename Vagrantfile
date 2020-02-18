@@ -21,8 +21,8 @@ Vagrant.configure("2") do |config|
   #
 
   # config.ssh.host = "192.168.33.33"
-  # config.ssh.password = "toor"
-  # config.ssh.username = "root"
+  # config.ssh.password = "kali"
+  # config.ssh.username = "kali"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -48,7 +48,7 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "~/CTF", "/vagrant_data"
+  config.vm.synced_folder "~/Share", "/vagrant_data"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.

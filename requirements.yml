@@ -2,10 +2,6 @@
   name: ansible-i3
   scm: git
 
-- src: https://github.com/binaryplease/ansible-neomutt.git
-  name: ansible-neomutt
-  scm: git
-
 - src: https://github.com/binaryplease/ansible-polybar.git
   name: ansible-polybar
   scm: git

@@ -44,7 +44,7 @@ while on the first start.
 #### Login
 
 After vagrant has finished type in type in the default Kali credentials
-(`root`/`toor`) and select `i3 session` in the top right menu of the login
+(`kali`/`kali`) and select `i3 session` in the top right menu of the login
 manager.
 
 #### Custom settings
@@ -93,7 +93,7 @@ If this happens, run `vagrant provision` again manually, then install the
 plugins with this command:
 
 ```bash
-/root/.local/bin/antibody bundle < /root/.config/zsh/zsh_plugins > /root/.zsh_plugins.sh
+/home/kali/.local/bin/antibody bundle < /home/kali/.config/zsh/zsh_plugins > /home/kali/.zsh_plugins.sh
 ```
 
 ## Documentation
